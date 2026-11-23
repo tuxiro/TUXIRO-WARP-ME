@@ -568,7 +568,9 @@ void TuxiroWarpMeEditor::paint (juce::Graphics& g)
     g.setColour (tx::greenMid().withAlpha (0.5f)); g.drawRoundedRectangle (22.f, 76.f, 980.f, 276.f, 6.f, 1.5f);
 
     // panels
-    const auto p1 = juce::Rectangle<float> (24, 448, 284, 212), p2 (326, 448, 368, 212), p3 (712, 448, 288, 212);
+    const juce::Rectangle<float> p1 (24, 448, 284, 212);
+const juce::Rectangle<float> p2 (326, 448, 368, 212);
+const juce::Rectangle<float> p3 (712, 448, 288, 212);
     drawPanel (g, p1); drawPanel (g, p2); drawPanel (g, p3);
 
     const auto stage = proc.getStage();
